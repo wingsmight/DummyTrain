@@ -11,6 +11,10 @@
 		CED5FEEE28F7A180003BD119 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5FEED28F7A180003BD119 /* ContentView.swift */; };
 		CED5FEF028F7A181003BD119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED5FEEF28F7A181003BD119 /* Assets.xcassets */; };
 		CED5FEF328F7A181003BD119 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED5FEF228F7A181003BD119 /* Preview Assets.xcassets */; };
+		CED5FEFD28F7A5AC003BD119 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5FEFC28F7A5AC003BD119 /* TicketView.swift */; };
+		CED5FF0028F7E6C3003BD119 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5FEFF28F7E6C3003BD119 /* NavigationBarModifier.swift */; };
+		CED5FF0328F7E6F0003BD119 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5FF0228F7E6F0003BD119 /* View+Ext.swift */; };
+		CED5FF0528F80547003BD119 /* RoundedRectangleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5FF0428F80547003BD119 /* RoundedRectangleButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		CED5FEED28F7A180003BD119 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CED5FEEF28F7A181003BD119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED5FEF228F7A181003BD119 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CED5FEFC28F7A5AC003BD119 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		CED5FEFF28F7E6C3003BD119 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
+		CED5FF0228F7E6F0003BD119 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		CED5FF0428F80547003BD119 /* RoundedRectangleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		CED5FEEA28F7A180003BD119 /* DummyTrain */ = {
 			isa = PBXGroup;
 			children = (
+				CED5FF0128F7E6E0003BD119 /* Extensions */,
+				CED5FEFE28F7E6B5003BD119 /* Handlers */,
+				CED5FEF928F7A567003BD119 /* Views */,
 				CED5FEEB28F7A180003BD119 /* DummyTrainApp.swift */,
-				CED5FEED28F7A180003BD119 /* ContentView.swift */,
 				CED5FEEF28F7A181003BD119 /* Assets.xcassets */,
 				CED5FEF128F7A181003BD119 /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				CED5FEF228F7A181003BD119 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CED5FEF928F7A567003BD119 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CED5FEED28F7A180003BD119 /* ContentView.swift */,
+				CED5FEFC28F7A5AC003BD119 /* TicketView.swift */,
+				CED5FF0428F80547003BD119 /* RoundedRectangleButtonStyle.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CED5FEFE28F7E6B5003BD119 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				CED5FEFF28F7E6C3003BD119 /* NavigationBarModifier.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		CED5FF0128F7E6E0003BD119 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CED5FF0228F7E6F0003BD119 /* View+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED5FEFD28F7A5AC003BD119 /* TicketView.swift in Sources */,
 				CED5FEEE28F7A180003BD119 /* ContentView.swift in Sources */,
+				CED5FF0328F7E6F0003BD119 /* View+Ext.swift in Sources */,
+				CED5FF0528F80547003BD119 /* RoundedRectangleButtonStyle.swift in Sources */,
+				CED5FF0028F7E6C3003BD119 /* NavigationBarModifier.swift in Sources */,
 				CED5FEEC28F7A180003BD119 /* DummyTrainApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +315,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +345,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
